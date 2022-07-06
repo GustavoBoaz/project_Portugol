@@ -1,31 +1,23 @@
-programa
-{
-	
-	funcao inicio()
-	{
-        caracter sigla
-        
-        leia(sigla)
-        escolha (sigla) {
-        caso 'S':
-            escreva("Opa São Paulo")
-            pare
-        caso 'P':
-            escreva("Opa Pará")
-            pare
-        caso contrario:
-            escreva("Opa Brasil")
-        }
+programa {
+	funcao inicio() {
+	    
+	    // 1. Fa�a um programa que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa apenas em dias.
+	    // considera 1 ano 365 dias
+	    // considera 1 m�s 30 dias
+	    
+		inteiro anos, meses, dias
+		inteiro resultado
+		
+		escreva("Entre com anos: ")
+		leia(anos)
+		escreva("Entre com meses: ")
+		leia(meses)
+		escreva("Entre com dias: ")
+		leia(dias)
+		
+		resultado = (365 * anos) + (meses * 30) + dias
+		
+		escreva("Idade expressa em dias: ", resultado)
+
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 203; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
